@@ -10,31 +10,20 @@ Este proyecto es una **API en Flask** que gestiona datos de estudiantes, utiliza
 
 ## 🛠️ Instrucciones de Instalación
 
-### 1️⃣ **Clonar el Repositorio**
+### 1️ **Clonar el Repositorio**
 ```bash
 git clone https://github.com/Pidual/Students.git
 cd Students
 ```
 
-### 2️⃣ **Crear el Archivo `.env`**  
-Para que la base de datos funcione correctamente, debes crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
-
-```ini
-DATABASE_URL=postgresql://user:password@db:5432/example_db
-FLASK_ENV=development
-SECRET_KEY=your_secret_key_here
-```
-
-> ⚠ **Importante:** Reemplaza `tu_usuario` y `tu_contraseña` con los valores que desees.
-
-### 3️⃣ **Ejecutar el Proyecto con Docker Compose**
+### 2 **Ejecutar el Proyecto con Docker Compose**
 ```bash
 docker compose up --build
 ```
 - La **API** estará disponible en: `http://127.0.0.1:5000`
 - La base de datos **PostgreSQL** se ejecutará en un contenedor.
 
-### 4️⃣ **Probar la API**
+### 3 **Probar la API**
 Para verificar que todo funciona correctamente, usa:
 ```bash
 curl http://127.0.0.1:5000/students
