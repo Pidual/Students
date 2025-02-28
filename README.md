@@ -1,4 +1,4 @@
-# 🐳 API de Estudiantes con Flask & PostgreSQL (Docker Compose)
+# 🐳 API de Estudiantes con Flask & PostgreSQL (Docker Compose) Gracias ChatGPT 
 
 Este proyecto es una **API en Flask** que gestiona datos de estudiantes, utilizando **PostgreSQL** como base de datos, todo en contenedores con **Docker Compose**.
 
