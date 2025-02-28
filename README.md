@@ -4,8 +4,7 @@ Este proyecto es una **API en Flask** que gestiona datos de estudiantes, utiliza
 
 ## 🚀 Características
 - Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para estudiantes.
-- Persistencia de datos en **PostgreSQL** en lugar de JSON.
-- Totalmente orquestado con **Docker Compose**.
+- Orquestado con **Docker Compose**.
 
 ---
 
@@ -21,9 +20,9 @@ cd Students
 Para que la base de datos funcione correctamente, debes crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
 ```ini
-POSTGRES_USER=tu_usuario
-POSTGRES_PASSWORD=tu_contraseña
-POSTGRES_DB=students_db
+DATABASE_URL=postgresql://user:password@db:5432/example_db
+FLASK_ENV=development
+SECRET_KEY=your_secret_key_here
 ```
 
 > ⚠ **Importante:** Reemplaza `tu_usuario` y `tu_contraseña` con los valores que desees.
@@ -71,45 +70,6 @@ Para detener la ejecución de los contenedores, usa:
 docker compose down
 ```
 
----
 
-## 📝 Licencia  
-Este proyecto está bajo la **Licencia MIT**.  
 
----
-
-## 🔗 Contacto  
-Si tienes dudas o sugerencias, contáctame en **[tu_email@example.com]** o abre un issue en el repositorio.
-
----
-
-### 🚀 **Contribuir al Proyecto**
-Si deseas contribuir, sigue estos pasos:
-1. **Haz un fork** del repositorio.
-2. Crea una nueva rama:  
-   ```bash
-   git checkout -b feature-nueva-funcionalidad
-   ```
-3. Haz tus cambios y confirma los cambios:
-   ```bash
-   git add .
-   git commit -m "Añadida nueva funcionalidad X"
-   ```
-4. Sube los cambios a tu fork:
-   ```bash
-   git push origin feature-nueva-funcionalidad
-   ```
-5. Abre un **Pull Request** en este repositorio.
-
----
-
-## 📀 Subir los Cambios a GitHub  
-Una vez que completes el `README.md`, súbelo a GitHub con estos comandos:
-```bash
-git add README.md
-git commit -m "Añadido README.md con instrucciones"
-git push origin main
-```
-
-🚀🔥 ¡Listo! Ahora tu proyecto tiene una documentación clara y profesional.
 
